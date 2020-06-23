@@ -8,6 +8,7 @@ This is a pharmacy application that I've used in a game.
 # References
 I've used the loader from codepen: https://codepen.io/WithAnEs/pen/MbMGOB
 
+# [Gif](https://i.imgur.com/cKoTPRD.gifv)
+
 # Images/Gif
 ![Image](https://i.imgur.com/75rN9Sr.png)
-[Imgur](https://i.imgur.com/cKoTPRD.gifv)
