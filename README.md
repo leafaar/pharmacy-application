@@ -1,7 +1,7 @@
 # Info
 This is a pharmacy application that I've used in a game.
 
-![Imgur](https://imgur.com/cKoTPRD)
+[Imgur](https://imgur.com/cKoTPRD)
 
 # How to use
 1. Download the repository using `git clone` or just download ZIP file.
