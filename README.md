@@ -1,9 +1,7 @@
+![Gif](https://i.imgur.com/cKoTPRD.gif)
+
 # Info
 This is a pharmacy application that I've used in a game.
-
-# Images/Gif
-![Gif](https://i.imgur.com/cKoTPRD.gif)
-![Image](https://i.imgur.com/75rN9Sr.png)
 
 # How to use
 1. Download the repository using `git clone` or just download ZIP file.
