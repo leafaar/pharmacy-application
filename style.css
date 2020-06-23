@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+.background{
+    width: 700px;
+    height: 500px;
+
+    background: #D3FFFF;
+    border: 1px solid #BBB6B6;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: auto;
+
+}
+
+.container{
+    position: absolute;
+    background: #7AFFFF;
+    border: 1px solid #BBB6B6;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: #AAA;
+}
+/*
+======================================================================================================
+PAGAMENTO
+======================================================================================================
+*/
+.process{
+    display: none;
+}
+.processText{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-top: 50%;
+}
+.processImg{
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*
+======================================================================================================
+LOADING
+======================================================================================================
+*/
+:root {
+    --EASE_INOUT_QUAD: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    --EASE_IN_QUAD: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    --EASE_OUT_QUAD: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    
+    --COLOR_UI_PHARMACY: #237db5;
+    --loaderPill_DURATION: 1800ms;
+}
+
+
+
+.absCenter {
+    display: none;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.loaderPill {
+    text-align: center;
+    margin-top: 30%;
+}
+
+.loaderPill-anim {
+    height: 160px;
+}
+
+.loaderPill-anim-bounce {
+    animation: loaderPillBounce var(--loaderPill_DURATION) linear infinite;
+}
+
+.loaderPill-anim-flop {
+    transform-origin: 50% 50%;
+    animation: loaderPillFlop var(--loaderPill_DURATION) linear infinite;
+}
+
+.loaderPill-pill {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid var(--COLOR_UI_PHARMACY);
+    background-image: linear-gradient(to right, var(--COLOR_UI_PHARMACY) 50%, #ffffff 50%);
+}
+
+.loaderPill-floor {
+    display: block;
+    text-align: center;
+}
+
+.loaderPill-floor-shadow {
+    display: inline-block;
+    width: 70px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: color(var(--COLOR_UI_PHARMACY) alpha(26%));
+    transform: translateY(-15px);
+    animation: loaderPillScale var(--loaderPill_DURATION) linear infinite;
+}
+
+.loaderPill-text {
+    font-weight: bold;
+    color: var(--COLOR_UI_PHARMACY);
+    text-transform: uppercase;
+}
+
+@keyframes loaderPillBounce {
+    0% {
+        transform: translateY(123px);
+        animation-timing-function: var(--EASE_OUT_QUAD);
+    }
+    25% {
+        transform: translateY(40px);
+        animation-timing-function: var(--EASE_IN_QUAD);
+    }
+    50% {
+        transform: translateY(120px);
+        animation-timing-function: var(--EASE_OUT_QUAD);
+    }
+    75% {
+        transform: translateY(20px);
+        animation-timing-function: var(--EASE_IN_QUAD);
+    }
+    100% {
+        transform: translateY(120px);
+    }
+}
+
+@keyframes loaderPillFlop {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(450deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes loaderPillScale {
+    0%   {
+        transform: translateY(-15px) scale(1, 1);
+        animation-timing-function: var(--EASE_OUT_QUAD);
+    }
+    25%  {
+        transform: translateY(-15px) scale(0.7, 1);
+        animation-timing-function: var(--EASE_IN_QUAD);
+    }
+    50%  {
+        transform: translateY(-15px) scale(1, 1);
+        animation-timing-function: var(--EASE_OUT_QUAD);
+    }
+    75%  {
+        transform: translateY(-15px) scale(0.6, 1);
+        animation-timing-function: var(--EASE_IN_QUAD);
+    }
+    100% {
+        transform: translateY(-15px) scale(1, 1);
+    }
+}
+
+/*
+======================================================================================================
+LEFT CONTAINER
+======================================================================================================
+*/
+
+
+.container.left{
+    margin-left: 17px;
+    margin-top: 27px;
+    width: 505px;
+    height: 446px;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    font-family: Sarala, sans-serif;
+    font-size: 11px;
+}
+
+.boxlist{
+    width: 120px;
+    height: 120px;
+    background: #E5E5E5;
+    border: 1px solid #BBB6B8;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-left: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Sarala, sans-serif;
+    font-size: 11px;
+}
+.boxlist:hover{
+    background: #D0D0D0;
+    cursor: pointer;
+}
+.boxlist:active{
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+.bltext{
+    font-family: Sarala;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 18px;
+    color: #000000;
+    margin-top: 101px;
+    height: 18px;
+    position: absolute;
+}
+.blimg{
+    width: 88px;
+    height: 88px;
+    margin-top: 8px;
+}
+
+
+/*
+======================================================================================================
+RIGHT CONTAINER
+======================================================================================================
+*/
+
+
+.container.right{
+    margin-left: 537px;
+    margin-top: 27px;
+    width: 146px;
+    height: 446px;
+}
+.btn{
+    position: absolute;
+    width: 137px;
+    height: 34.92px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: Sarala;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    outline: 0;
+
+}
+.deleteItem{
+    position: absolute;
+    text-align: center;
+    font-family: Sarala, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+
+    background: #FF7E7E;
+    width: 21px;
+    height: 19px;
+    border-radius: 50%;
+    margin-left: 77px;
+    margin-top: -87%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: block;
+    cursor: pointer;
+}
+.deleteItem:hover{
+    background: #FC6262;
+}
+.deleteItem:active{
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+.totaltext{
+    text-align: center;
+    font-style: Sarala, sans-serif;
+    font-size: 14px;
+    margin-top: 232.5%;
+}
+
+.cartbox{
+    width: 102px;
+    height: 101.77px;
+    background: #E5E5E5;
+    border: 1px solid #BBB6B8;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 11px;
+    text-align: center;
+    font-family: Sarala, sans-serif;
+    font-size: 10px;
+}
+.cartimg{
+    width: 74px;
+    height: 78px;
+}
+.quantity{
+    position: absolute;
+    margin-left: -7%;
+    margin-top: 3px;
+}
+.cart{
+    position: absolute;
+    width: 114px;
+    height: 230px;
+    
+    background: rgba(187, 187, 187, 0.49);
+    border: 1px solid #BBB6B6;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-left: 16px;
+    margin-top: 96px;
+    overflow-y: scroll;
+}
+.icon{
+    position: absolute;
+    width: 64px;
+    height: 63.86px;
+    margin-left: 41px;
+    margin-top: 21px;
+}
+
+.btn.cancelar{
+    background: #FF7E7E;
+    border: 1px solid #FF5252;
+    margin-left: 3px;
+    margin-top: 402px;
+}
+.btn.cancelar:hover{
+    background: #FC6262;
+}
+.btn.cancelar:active{
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+
+.btn.comprar{
+    background: #7EFF8B;
+    border: 1px solid #4BFF5E;
+    margin-left: 3px;
+    margin-top: 358px;
+}
+.btn.comprar:hover{
+    background: #43FF56;
+}
+.btn.comprar:active{
+    transform: scale(0.9);
+    opacity: 0.8;
+}
